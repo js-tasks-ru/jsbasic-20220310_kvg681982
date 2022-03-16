@@ -1,6 +1,11 @@
+// function factorial(n) {
+//   // ваш код...
+// }
 function factorial(n) {
-  let result = 1;
-  for (i = 1; i <= n; i++) {
-    result *=  i;}
-  console.log(result)
+  let result = 1; 
+
+  for(let i=1; i<=n; i++) {
+    result *= i;
+  }
+  return result;
 }
