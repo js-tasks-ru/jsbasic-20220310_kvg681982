@@ -34,9 +34,9 @@ export default class UserTable {
     }
   }
 
-  // onClick = (event) => {
-  //   let customEvent = new CustomEvent('row-delete', { bubbles: true, detail: event.target });
-  //   this.elem.dispatchEvent(customEvent);
-  // }
+  onClick = (event) => {
+    let customEvent = new CustomEvent('row-delete', { bubbles: true, detail: event.target });
+    this.elem.dispatchEvent(customEvent);
+  }
 
 }
