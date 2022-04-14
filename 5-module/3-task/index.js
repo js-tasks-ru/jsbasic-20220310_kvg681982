@@ -11,29 +11,29 @@ function initCarousel() {
   
   btnRight.addEventListener("click", () => {
     position += width;
-    carouselInner.style.transform = 'translateX('+(-position) + 'px)';
+    carouselInner.style.transform = 'translateX(' + (-position) + 'px)';
     btns();
   });
 
   btnLeft.addEventListener("click", () => {
     position -= width;
-    carouselInner.style.transform = 'translateX('+(-position) + 'px)';
+    carouselInner.style.transform = 'translateX(' + (-position) + 'px)';
     btns();
   });
     
-   const btns = () => {
-    if(position <= width*0.5){
+  const btns = () => {
+    if (position <= width * 0.5) {
       btnLeft.style.display = 'none';
     } else {
       btnLeft.style.display = '';
     }
 
     let newPosition = width * 2;
-      if(position > newPosition){
-       btnRight.style.display = 'none';
-      } else {
-       btnRight.style.display = '';
-      }
+    if (position > newPosition) {
+      btnRight.style.display = 'none';
+    } else {
+      btnRight.style.display = '';
+    }
   };
   btns();
 }
