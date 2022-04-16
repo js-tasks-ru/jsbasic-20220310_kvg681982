@@ -73,7 +73,7 @@ export default class RibbonMenu {
 
     event.target.classList.add('ribbon__item_active');
     
-    console.log(event.target.closest(".ribbon__item").getAttribute("data-id"))
+    console.log(event.target.closest(".ribbon__item").getAttribute("data-id"));
 
     this.elem.dispatchEvent(new CustomEvent('ribbon-select', {
       detail: event.target.closest(".ribbon__item").getAttribute("data-id"), 
